@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class git.RepoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class git.RepoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/git.html">git</a> &gt; RepoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.267s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="getTopics"></a>
+<h3 class="failures">getTopics</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Expected response code to be [200] but was [404]
+Expected: is &lt;200&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at git.validators.ResponseValidator.assertOk(ResponseValidator.java:31)
+	at git.RepoTest.getTopics(RepoTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">getTopics</td>
+<td class="failures">1.267s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>jan 22, 2021 8:51:05 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; GET https://api.github.com/repos/GitApiTest2021/Python/topics
+jan 22, 2021 8:51:05 DA TARDE okhttp3.internal.platform.Platform log
+INFO: accept: application/vnd.github.mercy-preview+json
+jan 22, 2021 8:51:05 DA TARDE okhttp3.internal.platform.Platform log
+INFO: --&gt; END GET
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- 404 https://api.github.com/repos/GitApiTest2021/Python/topics (591ms)
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: date: Fri, 22 Jan 2021 20:51:08 GMT
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: content-type: application/json; charset=utf-8
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: server: GitHub.com
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: status: 404 Not Found
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-github-media-type: github.mercy-preview; format=json
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: access-control-allow-origin: *
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: strict-transport-security: max-age=31536000; includeSubdomains; preload
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-frame-options: deny
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-content-type-options: nosniff
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-xss-protection: 1; mode=block
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: content-security-policy: default-src 'none'
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: vary: Accept-Encoding, Accept, X-Requested-With
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-ratelimit-limit: 60
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-ratelimit-remaining: 56
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-ratelimit-reset: 1611351273
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-ratelimit-used: 4
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: x-github-request-id: C997:5F1C:22A095A:266B662:600B3ABC
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: 
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: {&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest/reference/repos#get-all-repository-topics&quot;}
+jan 22, 2021 8:51:06 DA TARDE okhttp3.internal.platform.Platform log
+INFO: &lt;-- END HTTP (116-byte body)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 22/01/2021, 20:51:07</p>
+</div>
+</div>
+</body>
+</html>
